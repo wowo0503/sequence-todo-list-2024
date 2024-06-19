@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ToDo list</title>
+  </head>
+  <body>
+    <div class="todo-wrapper">
+      <div class="todo-header">
+        <span> ToDo List </span>
+        <button class="toggle-form">
+          <span>click here to add</span>
+        </button>
+      </div>
+      <form class="todo-form hide">
+        <input class="duedate" type="date" required />
+        <input
+          class="content"
+          type="title"
+          placeholder="New to do here"
+          required
+        />
+        <button><span>save</span></button>
+      </form>
+      <div class="todo-list"></div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
