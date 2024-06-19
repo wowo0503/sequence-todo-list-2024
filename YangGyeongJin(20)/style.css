@@ -1,0 +1,133 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+.todo-wrapper {
+  justify-content: center;
+  margin-top: 3rem;
+  min-width: 600px;
+}
+
+.todo-header {
+  padding: 2rem;
+  text-align: center;
+  color: lightslategrey;
+  font-size: 5rem;
+  display: grid;
+}
+
+.todo-form {
+  width: 80vw;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(186, 200, 215);
+  border-radius: 4px;
+  margin: 4px;
+  align-items: center;
+  transition: opacity 0.1s;
+}
+
+.todo-form.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+.todo-form button {
+  margin-right: 10px;
+}
+
+.todo-list {
+  width: 100%;
+  display: grid;
+  transition: cubic-bezier() 0.9s;
+}
+
+.todo {
+  width: 80vw;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(186, 200, 215);
+  border-radius: 4px;
+  margin: 4px;
+  opacity: 1;
+  align-items: center;
+}
+
+.todo:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.todo.done {
+  opacity: 0.7;
+  transition: opacity 0.3s linear;
+  text-decoration: line-through;
+}
+
+.duedate {
+  left: 10px;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(186, 200, 215);
+  border: 0;
+}
+
+.content {
+  left: 10px;
+  margin: 10px;
+  flex-grow: 1;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(186, 200, 215);
+  border: 0;
+}
+
+.todo input[type="checkbox"] {
+  margin: 10px;
+  transform: scale(1.6);
+}
+
+.todo button {
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: lightslategrey;
+  font-weight: 530;
+  font-size: 15px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
